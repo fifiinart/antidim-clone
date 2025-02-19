@@ -1,0 +1,232 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+.smalltext {
+  font-size: 75%;
+}
+
+#antimatter {
+  font-size: 200%;
+}
+
+#antimatter-dims {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+}
+
+.am-dimension-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  flex: 1 auto;
+  margin: 0 auto;
+  width: 90%;
+  align-content: center;
+}
+
+.am-dimension-row * {
+  flex: 1 auto;
+  align-content: center;
+  padding: 5px;
+}
+
+div:has(> .am-dimension-count) {
+  flex: 2 auto;
+}
+
+.am-dimension-buy-button {
+  width: 80%;
+  flex: 0 auto;
+  position: relative;
+  justify-self: end;
+}
+
+.am-dimension-buy-button * {
+  padding: 0;
+}
+
+.not-reached {
+  opacity: 50%;
+}
+
+.button {
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 3px;
+  user-select: none;
+  margin: 3px;
+  padding: 4px 20px;
+}
+
+.button * {
+  position: relative;
+  z-index: 2;
+}
+
+.button:hover {
+  background-color: lightgrey;
+}
+
+.button:active {
+  background-color: grey;
+  color: white
+}
+
+#toggle-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#main-center-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#tickspeed-upgrades {
+  display: flex;
+  width: 30%;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+#tickspeed-buy-button {
+  flex: 3 auto;
+  position: relative;
+}
+
+#tickspeed-buy-max {
+  flex: 1 auto;
+}
+
+.button-fill,
+.button-fill * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.button-fill-purchased {
+  background-color: lightgreen;
+}
+
+.button-fill-pending {
+  background-color: limegreen;
+}
+
+.button-disabled {
+  background-color: lightpink;
+}
+
+.button-disabled:hover {
+  background-color: lightcoral;
+}
+
+.am-purchase-popup {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  padding: 3px;
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% - 10px), -50%);
+  width: 100%;
+  visibility: hidden;
+}
+
+.am-purchase-popup::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  border-top: 4px solid transparent;
+  border-left: 4px solid black;
+  border-bottom: 4px solid transparent;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.am-dimension-buy-button:hover .am-purchase-popup,
+.am-dimension-buy-button:hover .am-purchase-popup::after {
+  visibility: visible;
+}
+
+.tooltip {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  padding: 3px 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+  visibility: hidden;
+
+  display: inline-block;
+  max-width: 200px;
+  width: max-content;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-left: 4px solid transparent;
+  border-top: 4px solid black;
+  border-right: 4px solid transparent;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.tooltip-container:hover .tooltip,
+.tooltip-container:hover .tooltip::after {
+  visibility: visible;
+}
+
+#reset-sections {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  gap: auto;
+  width: 60%;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#reset-sections * {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10%;
+  height: 100%;
+
+  align-content: center;
+}
+
+#reset-sections * * {
+  width: 80%;
+  margin: 0 auto;
+}

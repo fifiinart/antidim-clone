@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="2-UA-Compatible" content="ie=edge">
+  <title>Antimatter Dimensions</title>
+</head>
+
+<body>
+  <header class="smalltext">
+    <p>You have <span id="antimatter">10</span> antimatter.</p>
+    <p>You are gaining <span id="antimatter-rate">0</span> antimatter per second.</p>
+    <p>ADs produce x<span id="tickspeed-effect">1.125</span> faster per Tickspeed upgrade<br>
+      Total Tickspeed: <span id="tickspeed">1.000</span> / sec</p>
+  </header>
+  <hr>
+  <div id="main">
+    <div id="toggle-buttons">
+      <div id="toggle-buy-max-button" class="button">Until 10</div>
+      <div id="sacrifice-button" class="button">Dimensional Sacrifice Disabled (No 8th Antimatter Dimensions)</div>
+      <div id="buy-max-button" class="button">Max All (M)</div>
+    </div>
+    <div id="main-center-section">
+      <span class="smalltext" id="info-bar">Buy 10 Dimension purchase multiplier: x2.00</span>
+      <div id="tickspeed-upgrades">
+        <div id="tickspeed-buy-button" class="tooltip-container button smalltext">
+          <div id="tickspeed-purchases" class="tooltip">0 Purchased Upgrades</div>
+          <span id="tickspeed-buy">Tickspeed Cost: 1e3</span>
+        </div>
+        <div id="tickspeed-buy-max" class="button smalltext">Buy Max</div>
+      </div>
+    </div>
+
+    <ul id="antimatter-dims">
+      <li id="am-d1" class="am-dimension-row">
+        <div>Antimatter Dimension 1 <span id="ad1-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad1-count" class="am-dimension-count">0</span>
+          <span id="ad1-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad1-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad1-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div class="button-fill">
+            <div id="ad1-fill-pending" class="button-fill-pending"></div>
+            <div id="ad1-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+          <div id="ad1-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad1-cost" class="am-dimension-cost">Cost: 10 AM</div>
+      </li>
+      <li id="am-d2" class="am-dimension-row">
+        <div>Antimatter Dimension 2 <span id="ad2-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad2-count" class="am-dimension-count">0</span>
+          <span id="ad2-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad2-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad2-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad2-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad2-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad2-fill-pending" class="button-fill-pending"></div>
+            <div id="ad2-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+      </li>
+      <li id="am-d3" class="am-dimension-row">
+        <div>Antimatter Dimension 3 <span id="ad3-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad3-count" class="am-dimension-count">0</span>
+          <span id="ad3-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad3-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad3-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad3-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad3-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad3-fill-pending" class="button-fill-pending"></div>
+            <div id="ad3-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+      <li id="am-d4" class="am-dimension-row">
+        <div>Antimatter Dimension 4 <span id="ad4-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad4-count" class="am-dimension-count">0</span>
+          <span id="ad4-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad4-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad4-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad4-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad4-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad4-fill-pending" class="button-fill-pending"></div>
+            <div id="ad4-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+      <li id="am-d5" class="am-dimension-row">
+        <div>Antimatter Dimension 5 <span id="ad5-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad5-count" class="am-dimension-count">0</span>
+          <span id="ad5-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad5-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad5-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad5-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad5-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad5-fill-pending" class="button-fill-pending"></div>
+            <div id="ad5-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+      <li id="am-d6" class="am-dimension-row">
+        <div>Antimatter Dimension 6 <span id="ad6-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad6-count" class="am-dimension-count">0</span>
+          <span id="ad6-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad6-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad6-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad6-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad6-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad6-fill-pending" class="button-fill-pending"></div>
+            <div id="ad6-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+      <li id="am-d7" class="am-dimension-row">
+        <div>Antimatter Dimension 7 <span id="ad7-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad7-count" class="am-dimension-count">0</span>
+          <span id="ad7-rate" class="am-dimension-rate smalltext">(+0.00%/s)</span>
+        </div>
+        <div id="ad7-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad7-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad7-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad7-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad7-fill-pending" class="button-fill-pending"></div>
+            <div id="ad7-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+      <li id="am-d8" class="am-dimension-row">
+        <div>Antimatter Dimension 8 <span id="ad8-mult" class="am-dimension-mult smalltext">x1.00</span></div>
+        <div>
+          <span id="ad8-count" class="am-dimension-count">0</span>
+        </div>
+        <div id="ad8-buy-button" class="am-dimension-buy-button button smalltext">
+          <div id="ad8-purchases" class="am-purchase-popup">Purchased 0 times</div>
+          <div id="ad8-buy" class="am-dimension-buy">Buy 1</div>
+          <div id="ad8-cost" class="am-dimension-cost">Cost: 10 AM</div>
+          <div class="button-fill">
+            <div id="ad8-fill-pending" class="button-fill-pending"></div>
+            <div id="ad8-fill-purchased" class="button-fill-purchased"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div id="reset-sections">
+      <div id="dimboost-section">
+        <div id="dimboost-count" class="reset-count">Dimension Boost (0)</div>
+        <div id="dimboost-cost" class="reset-cost smalltext">Cost: 20 4th Antimatter D</div>
+        <div id="dimboost-buy" class="button smalltext">Reset your Dimensions to unlock the 5th Dimension and give a
+          x2.0
+          multiplier
+          to the 1st Dimension</div>
+      </div>
+      <div id="galaxy-section">
+        <div id="galaxy-count" class="reset-count">Antimatter Galaxies (0)</div>
+        <div id="galaxy-cost" class="reset-cost smalltext">Cost: 80 8th Antimatter D</div>
+        <div id="galaxy-buy" class="button smalltext">Reset your Dimensions and Dimension Boosts to increase the power
+          of
+          Tickspeed upgrades</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/index.ts"></script>
+
+</body>
+
+</html>

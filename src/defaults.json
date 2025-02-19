@@ -1,0 +1,83 @@
+{
+  "antimatter": 10,
+  "amRate": 0,
+  "amDimRates": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "amDimAmount": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "amDimPurchases": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "amDimMaxBuyable": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "amDimMultiplier": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "amDimCost": [
+    1e1,
+    1e2,
+    1e4,
+    1e6,
+    1e9,
+    1e13,
+    1e18,
+    1e24
+  ],
+  "amDimCostIncrease": [
+    1e3,
+    1e4,
+    1e5,
+    1e6,
+    1e8,
+    1e10,
+    1e12,
+    1e15
+  ],
+  "amBuySingles": false,
+  "amDimHighestBought": 0,
+  "amDimHighestSeen": 1,
+  "tickspeedPurchases": 0,
+  "tickspeed": 1,
+  "tickspeedUpgradeEffect": 1.1245,
+  "tickspeedCost": 1e3,
+  "tickspeedCostIncrease": 10,
+  "dimboosts": 16,
+  "galaxies": 2
+}
